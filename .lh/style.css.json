@@ -1,0 +1,22 @@
+{
+    "sourceFile": "style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1756768466639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756768487902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,90 @@\n-style.css\n\\ No newline at end of file\n+/* Estilos básicos */\r\n+\r\n+body {\r\n+  font-family: Arial, sans-serif;\r\n+  margin: 0;\r\n+  padding: 0;\r\n+  background-color: #f4f4f4;\r\n+}\r\n+\r\n+header {\r\n+  background-color: #333; /* Fondo oscuro */\r\n+  color: white;\r\n+  text-align: center;\r\n+  padding: 20px;\r\n+}\r\n+\r\n+header h1 {\r\n+  margin: 0;\r\n+  font-size: 2em;\r\n+}\r\n+\r\n+#productos-grid {\r\n+  display: grid;\r\n+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cuadrícula responsiva */\r\n+  gap: 20px;\r\n+  padding: 20px;\r\n+}\r\n+\r\n+.producto {\r\n+  background-color: white;\r\n+  padding: 15px;\r\n+  border-radius: 8px;\r\n+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */\r\n+  text-align: center;\r\n+  transition: transform 0.3s ease, box-shadow 0.3s ease;\r\n+}\r\n+\r\n+.producto:hover {\r\n+  transform: translateY(-5px); /* Efecto de movimiento hacia arriba */\r\n+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte en hover */\r\n+}\r\n+\r\n+.producto img {\r\n+  width: 100%;\r\n+  height: 200px;\r\n+  object-fit: cover;\r\n+  border-radius: 8px;\r\n+}\r\n+\r\n+.producto h3 {\r\n+  margin-top: 15px;\r\n+  font-size: 1.2em;\r\n+  color: #333;\r\n+}\r\n+\r\n+.producto p {\r\n+  font-size: 1em;\r\n+  color: #666;\r\n+  margin: 10px 0;\r\n+}\r\n+\r\n+.producto button {\r\n+  background-color: #ff6347; /* Color de fondo del botón */\r\n+  color: white;\r\n+  padding: 10px 15px;\r\n+  border: none;\r\n+  border-radius: 5px;\r\n+  cursor: pointer;\r\n+  font-size: 1em;\r\n+  transition: background-color 0.3s ease; /* Efecto de transición */\r\n+}\r\n+\r\n+.producto button:hover {\r\n+  background-color: #ff4500; /* Color más oscuro al pasar el ratón */\r\n+}\r\n+\r\n+footer {\r\n+  background-color: #333; /* Fondo oscuro */\r\n+  color: white;\r\n+  text-align: center;\r\n+  padding: 10px;\r\n+  position: fixed;\r\n+  bottom: 0;\r\n+  width: 100%;\r\n+}\r\n+\r\n+footer p {\r\n+  margin: 0;\r\n+  font-size: 0.9em;\r\n+}\r\n"
+                }
+            ],
+            "date": 1756768466639,
+            "name": "Commit-0",
+            "content": "style.css"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".history/productos_20250912144400.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1758692112199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1758692112199,
+            "name": "Commit-0",
+            "content": "{\r\n  \"topBar\": {\r\n    \"titulo\": \"BYTSAC\",\r\n    \"telefono\": \"+51 920 165 696\",\r\n    \"email\": \"info@avifarma.com\",\r\n    \"links\": [\r\n      { \"nombre\": \"Inicio\", \"url\": \"#\" },\r\n      { \"nombre\": \"Servicios\", \"url\": \"#\" },\r\n      { \"nombre\": \"Noticias\", \"url\": \"#\" },\r\n      { \"nombre\": \"Contacto\", \"url\": \"#\" }\r\n    ]\r\n  },\r\n\r\n  \"productos\": [\r\n    {\r\n      \"id\": 1,\r\n      \"nombre\": \"Paracetamol 500mg\",\r\n      \"descripcion\": \"Alivio del dolor y reducción de fiebre.\",\r\n      \"precio\": 5.00,\r\n      \"img\": \"img/productos/paracetamol-500mg.png\"\r\n    },\r\n    {\r\n      \"id\": 2,\r\n      \"nombre\": \"Amoxicilina 500mg\",\r\n      \"descripcion\": \"Antibiótico para tratar infecciones bacterianas.\",\r\n      \"precio\": 12.00,\r\n      \"img\": \"img/productos/amoxicilina-500mg.png\"\r\n    },\r\n    {\r\n      \"id\": 3,\r\n      \"nombre\": \"Ibuprofeno 400mg\",\r\n      \"descripcion\": \"Reduce inflamación, dolor y fiebre.\",\r\n      \"precio\": 8.00,\r\n      \"img\": \"img/productos/ibuprofeno-400mg.png\"\r\n    },\r\n    {\r\n      \"id\": 4,\r\n      \"nombre\": \"Vitamina C 1g\",\r\n      \"descripcion\": \"Refuerza el sistema inmunológico.\",\r\n      \"precio\": 10.00,\r\n      \"img\": \"img/productos/vitamina-c-1g.png\"\r\n    }\r\n\r\n  ],\r\n\r\n  \"ofertas\": [\r\n    {\r\n      \"id\": 101,\r\n      \"nombre\": \"Pediasure\",\r\n      \"descripcion\": \"Nutrición completa para niños\",\r\n      \"precio\": 20.00,\r\n      \"img\": \"img/ofertas/pediasure-of.png\",\r\n      \"descuento\": \"5% OFF\",\r\n      \"precio_con_descuento\": 19.00,\r\n      \"ahorro\": 1.00\r\n    },\r\n    {\r\n      \"id\": 102,\r\n      \"nombre\": \"Gel Limpiador Espumoso\",\r\n      \"descripcion\": \"Para aplicar en manos y cuerpo.\",\r\n      \"precio\": 5.00,\r\n      \"img\": \"img/ofertas/gel-limpiador-espumoso.jpg\",\r\n      \"descuento\": \"5% OFF\",\r\n      \"precio_con_descuento\": 4.75,\r\n      \"ahorro\": 0.25\r\n    }\r\n  ],\r\n\r\n  \"BannerCarrusel\": [\r\n    {\r\n      \"src\": \"img/carrusel/ban_1.png\",\r\n      \"alt\": \"Banner 1\"\r\n    },\r\n    {\r\n      \"src\": \"img/carrusel/ban_2.png\",\r\n      \"alt\": \"Banner 2\"\r\n    },\r\n    {\r\n      \"src\": \"img/carrusel/ban_3.png\",\r\n      \"alt\": \"Banner 3\"\r\n    }\r\n  ]\r\n}\r\n"
+        }
+    ]
+}

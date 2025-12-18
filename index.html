@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avifarma | Boticas y Farmacias - Salud y Bienestar</title>
+
+  <!-- =========================
+       SEO BÁSICO
+  ========================= -->
+  <meta name="description" content="Avifarma - Tu salud primero, siempre cerca de ti. Productos, servicios médicos y ofertas especiales.">
+  <meta name="keywords" content="Avifarma, farmacia, botica, medicamentos, salud, productos farmacéuticos, Perú">
+  <meta name="author" content="Bytsac.com">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/logo/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Avifarma | Tu salud primero">
+  <meta property="og:description" content="Descubre productos, servicios médicos y ofertas especiales en Avifarma.">
+  <meta property="og:image" content="img/logo/Logo.png">
+  <meta property="og:url" content="https://avifarma.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Avifarma | Tu salud primero">
+  <meta name="twitter:description" content="Descubre productos, servicios médicos y ofertas especiales en Avifarma.">
+  <meta name="twitter:image" content="img/logo/Logo.png">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Pharmacy",
+      "name": "Avifarma",
+      "image": "https://avifarma.com/img/logo/Logo.png",
+      "url": "https://avifarma.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Trujillo",
+        "addressCountry": "PE"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+51 920165696",
+        "contactType": "customer service"
+      }
+    }
+  </script>
+<!-- 🔹 Aquí importas la fuente de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- =========================
+       ARCHIVOS CSS
+  ========================= -->
+  <link rel="stylesheet" href="css/style.css?v=1.9">
+</head>
+
+<body>
+  <!-- =========================
+       🔹 FRANJA SUPERIOR (Marquee con promos)
+  ========================= -->
+  <div class="promo-bar" role="banner">
+    <div class="marquee" aria-label="Promociones destacadas">
+      <span> Desarrollamos tu paguina Web. contactanos en bytsac.com</span>
+      <span>📦 Envíos gratis en compras mayores a S/ 99</span>
+      <span>💊 Promoción válida hasta el 14 de septiembre</span>
+    </div>
+  </div>
+
+  <div class="separador"></div>
+
+  <!-- =========================
+       🔹 TOP-BAR (COLOR NARANJA)
+  ========================= -->
+ <div id="top-bar" class="top-bar"></div>
+    <!-- Contenedor vacío para mantener la franja visible -->
+  </div>
+
+  <div class="separator"></div>
+
+  <!-- =========================
+       🔹 HEADER PRINCIPAL
+  ========================= -->
+
+ <header class="main-header" role="banner">
+
+      <!-- 🔸 Menú hamburguesa y logo -->
+      <div class="logo-menu-container">
+        <!-- 🔸 Menú hamburguesa (izquierda) -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-controls="nav" aria-expanded="false">
+          ☰
+        </button>
+
+        <!-- 🔸 Logo de Avifarma y nombre -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo/logo.jpeg" alt="Avifarma Logo" width="50" height="50" loading="lazy">
+          </a>
+          <h1>Avifarma</h1>
+        </div>
+      </div>
+
+      <!-- 🔸 Buscador centrado -->
+      <div class="buscador-container">
+        <form role="search" class="search" action="buscar.html" method="get">
+          <label for="buscador" class="sr-only"></label>
+          <input type="search" name="q" id="buscador" placeholder="Buscar productos..." aria-label="Buscar productos">
+          <button type="submit" aria-label="Buscar">🔍</button>
+        </form>
+      </div>
+
+      <!-- 🔸 Acciones (Login y Carrito) -->
+      <div class="acciones-header">
+        <!-- Ingresar -->
+        <a href="login.html">
+          <img src="img/logo/login.png" alt="Imagen de inicio de sesión" style="width:50px;height:50px;">
+        </a>
+
+        <!-- Carrito -->
+        <a href="#" id="abrir-carrito" class="carrito-icono" aria-label="Abrir carrito de compras">
+          <img src="img/logo/carrito.png" alt="Carrito de compras" class="icono-img" width="32" height="32" loading="lazy">
+          <span id="contador-carrito" class="contador">0</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+<!-- MENÚ LATERAL -->
+<div id="nav" class="menu">
+  <!-- LOGO -->
+  <div id="logo-container">
+    <img src="img/logo/logo.jpeg" alt="Avifarma Logo" id="logo">
+    <h2>Avifarma</h2>
+  </div>
+
+  <!-- BOTÓN CERRAR -->
+  <span id="close-menu" aria-label="Cerrar menú">❌</span>
+
+  <!-- CONTENIDO SCROLLEABLE -->
+  <div class="menu-scroll">
+    <ul class="menu-principal">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#">Servicios</a></li>
+
+      <!-- MENÚ DINÁMICO DE CATEGORÍAS -->
+      <li class="menu-categorias-container">
+        <a href="#" class="categoria-toggle" id="toggle-categorias">
+          Categorías
+        </a>
+        <ul id="menu-categorias" class="categorias-lista">
+          <!-- Aquí se insertan dinámicamente las categorías desde productos.json -->
+        </ul>
+      </li>
+
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Fondo oscuro al abrir menú -->
+<div id="overlay-menu"></div>
+
+
+  <!-- =========================
+       🔹 HERO CARRUSEL BANNERS (PROMOCIONES)
+  ========================= -->
+  <section class="promociones" aria-label="Banners promocionales">
+    <div class="slider-container">
+      <div class="slider" id="slider-banner"></div>
+      <button class="prev" aria-label="Anterior">❮</button>
+      <button class="next" aria-label="Siguiente">❯</button>
+      <div class="dots-container" id="dots"></div>
+    </div>
+  </section>
+
+<!-- =========================
+     🔹 PRODUCTOS DESTACADOS
+========================= -->
+<main>
+  <section class="productos">
+    <h2 id="titulo-productos">Productos Destacados</h2>
+    <div class="grid-productos" id="productos-grid"></div>
+  </section>
+
+  <!-- 🔹 CATÁLOGO (se llena al elegir categoría o subcategoría) -->
+  <section class="catalogo">
+    <h2 id="titulo-catalogo">Catálogo</h2>
+    <div id="catalogo" class="grid-productos"></div>
+  </section>
+
+  <aside class="ofertas" aria-label="Ofertas especiales">
+    <h3 id="titulo-ofertas">Ofertas Especiales</h3>
+    <p class="oferta-texto"></p>
+    <div class="grid-ofertas" id="ofertas-grid"></div>
+  </aside>
+</main>
+
+
+  <!-- =========================
+       🔹 SERVICIOS
+  ========================= -->
+  <section class="servicios">
+    <h2 id="titulo-servicios">Nuestros Servicios</h2>
+    <p>Conoce nuestros servicios médicos especializados para tu bienestar.</p>
+
+    <div id="slider-servicios" class="slider-container">
+      <div id="servicios-carousel" class="carousel-container">
+        <!-- Tarjetas dinámicas -->
+      </div>
+      <button class="prev-servicio" aria-label="Anterior">❮</button>
+      <button class="next-servicio" aria-label="Siguiente">❯</button>
+      <div class="dots-servicios"></div>
+    </div>
+  </section>
+
+  <!-- =========================
+       🔹 NOVEDADES
+  ========================= -->
+  <section class="novedades">
+    <h2 id="titulo-novedades">Últimas Noticias</h2>
+    <div id="novedades-grid" class="grid"></div>
+  </section>
+<!-- =========================
+       🔹 FOOTER
+  ========================= -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <h3>Información</h3>
+        <ul>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Políticas</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Servicios</h3>
+        <ul>
+          <li><a href="#">Servicios farmacéuticos</a></li>
+          <li><a href="#">Distribución de medicamentos</a></li>
+          <li><a href="#">Consultas farmacéuticas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <p>Email: <a href="mailto:info@avifarma.com">info@avifarma.com</a></p>
+        <p>Tel: <a href="tel:+51 929 261 925">+51 929 261 925</a></p>
+      </div>
+      <!-- Redes Sociales -->
+      <div>
+        <h3>Síguenos</h3>
+        <ul class="social-media">
+          <li><a href="https://facebook.com/Botica Avifarma " target="_blank"><img src="img/redes/facebook.png" alt="Facebook" width="30" height="30"></a></li>
+          <li><a href="https://twitter.com/avifarma" target="_blank"><img src="img/redes/twitter.png" alt="Twitter" width="30" height="30"></a></li>
+          <li><a href="https://instagram.com/avifarma" target="_blank"><img src="img/redes/instagram.png" alt="Instagram" width="30" height="30"></a></li>
+          <li><a href="https://linkedin.com/company/avifarma" target="_blank"><img src="img/redes/linkedin.jpg" alt="LinkedIn" width="30" height="30"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Avifarma. Tu botica de confianza. Desarrollado por <a href="https://bytsac.com" target="_blank" rel="noopener">Bytsac.com</a>.</p>
+    </div>
+  </footer>
+
+  <div id="overlay-carrito"></div>
+
+<!-- =========================
+       🔹 SIDEBAR LATERAL (CARRITO LATERAL)
+========================== -->
+<div id="carrito-sidebar" class="carrito-sidebar" aria-hidden="true">
+  <div class="carrito-header">
+    <!-- Icono del carrito dentro del encabezado, junto al título -->
+    <a href="#" id="abrir-carrito" class="carrito-icono" aria-label="Abrir carrito de compras">
+      <img src="img/logo/carrito.png" alt="Carrito de compras" class="icono-img" width="32" height="32" loading="lazy">
+    </a>
+    <h2>Carrito</h2>
+  <button class="cerrar-carrito" aria-label="Cerrar carrito">×</button>
+
+  </div>
+
+  <div id="carrito-items" class="productos-carrito">
+    <!-- Ejemplo producto -->
+    <div class="producto-card">
+      <img src="img/productos/product box.jpg" alt="Producto">
+      <div class="producto-info">
+        <h3>Nombre del Producto</h3>
+        <p class="precio">S/ 20.00</p>
+        <div class="acciones">
+          <button class="cantidad">-</button>
+          <span>1</span>
+          <button class="cantidad">+</button>
+          <button class="eliminar">🗑</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="carrito-footer">
+      <div class="resumen-linea">
+        <span>Subtotal</span>
+        <span id="subtotal">S/ 0.00</span>
+      </div>
+      <div class="resumen-linea">
+        <span>Costo de envío</span>
+        <span id="costo-envio">--</span>
+      </div>
+      <div class="resumen-linea">
+        <span>Descuento por volumen</span>
+        <span id="descuento-volumen">S/ 0.00</span>
+      </div>
+      <div class="resumen-linea">
+        <span>Descuento directo</span>
+        <span id="descuento-directo">S/ 0.00</span>
+      </div>
+      <div class="resumen-linea ahorro">
+        <span>Ahorro total</span>
+        <span id="ahorro-total">S/ 0.00</span>
+      </div>
+
+      <hr>
+
+      <div class="resumen-total">
+        <span>Total</span>
+        <span id="total">S/ 0.00</span>
+      </div>
+
+      <p class="nota-envio">El costo de envío no está incluido en el total.</p>
+
+      <div class="cart-buttons">
+        <button id="ir-a-pagar" class="btn-primary" onclick="comprarAhora()">Comprar ahora por WhatsApp</button>
+        <a href="carrito.html" id="ver-carrito" class="btn-secundario">Ver carrito</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/menu.js?v=1.9" defer></script>
+<script src="js/render-catalogo.js?v=1.9" defer></script> <!-- primero -->
+<script src="js/carrito.js?v=1.9" defer></script>           <!-- después -->
+
+</body>
+</html>

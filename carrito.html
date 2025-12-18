@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrito - Avifarma</title>
+
+  <!-- Enlazar los mismos archivos de estilo -->
+  <link rel="stylesheet" href="css/style.css?v=1.9">
+  <link rel="stylesheet" href="css/carrito.css?v=1.9">
+</head>
+<body class="carrito-page">
+
+  <!-- =========================
+       🔹 FRANJA SUPERIOR (Barra promocional)
+  ========================= -->
+  <div class="promo-bar" role="banner">
+    <div class="marquee" aria-label="Promociones destacadas">
+      <span> Desarrollamos tu paguina Web. contactanos en bytsac.com</span>
+      <span>📦 Envíos gratis en compras mayores a S/ 99</span>
+      <span>💊 Promoción válida hasta el 14 de septiembre</span>
+    </div>
+  </div>
+
+  <div class="separador"></div>
+
+  <!-- =========================
+       🔹 TOP-BAR (Login/Usuario)
+  ========================= -->
+  <div class="top-bar" style="height: 50px;">
+    <!-- Contenedor vacío para mantener la visibilidad de la barra superior -->
+  </div>
+
+  <div class="separator"></div>
+
+  <!-- =========================
+       🔹 HEADER PRINCIPAL (Encabezado Principal)
+  ========================= -->
+  <header class="header sticky" role="banner">
+    <div class="main-header">
+
+      <!-- 🔸 Logo y Menú de Navegación (Menú Hamburguesa) -->
+      <div class="logo-menu-container">
+        <!-- Botón de menú hamburguesa (para navegación móvil) -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-controls="nav" aria-expanded="false">
+          ☰
+        </button>
+
+        <!-- Logo de la marca Avifarma -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo/logo.jpeg" alt="Avifarma Logo" width="50" height="50" loading="lazy">
+          </a>
+          <h1>Avifarma</h1>
+        </div>
+      </div>
+
+      <!-- 🔸 Barra de Búsqueda -->
+      <div class="buscador-container">
+        <!-- Formulario para buscar productos -->
+        <form role="search" class="search" action="buscar.html" method="get">
+          <label for="buscador" class="sr-only"></label>
+          <input type="search" name="q" id="buscador" placeholder="Buscar productos..." aria-label="Buscar productos">
+          <button type="submit" aria-label="Buscar">🔍</button>
+        </form>
+      </div>
+
+      <!-- 🔸 Acciones (Login y Carrito) -->
+      <div class="acciones-header">
+        <!-- Botón de inicio de sesión -->
+        <a href="login.html">
+          <img src="img/logo/login.png" alt="Imagen de inicio de sesión" style="width:50px;height:50px;">
+        </a>
+
+        <!-- Botón del carrito con el contador de artículos -->
+        <a href="#" id="abrir-carrito" class="carrito-icono" aria-label="Abrir carrito de compras">
+          <img src="img/logo/carrito.png" alt="Carrito de compras" class="icono-img" width="32" height="32" loading="lazy">
+          <span id="contador-carrito" class="contador">0</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+ <!-- MENÚ LATERAL -->
+<div id="nav" class="menu">
+  <!-- LOGO -->
+  <div id="logo-container">
+    <img src="img/logo/logo.jpeg" alt="Avifarma Logo" id="logo">
+    <h2>Avifarma</h2>
+  </div>
+
+  <!-- BOTÓN CERRAR -->
+  <span id="close-menu" aria-label="Cerrar menú">❌</span>
+
+  <!-- CONTENIDO SCROLLEABLE -->
+  <div class="menu-scroll">
+    <ul class="menu-principal">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#">Servicios</a></li>
+
+      <!-- MENÚ DINÁMICO DE CATEGORÍAS -->
+      <li class="menu-categorias-container">
+        <a href="#" class="categoria-toggle" id="toggle-categorias">
+          Categorías
+        </a>
+        <ul id="menu-categorias" class="categorias-lista">
+          <!-- Aquí se insertan dinámicamente las categorías desde productos.json -->
+        </ul>
+      </li>
+
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Fondo oscuro al abrir menú -->
+<div id="overlay-menu"></div>
+
+  <!-- =========================
+       🔹 CONTENIDO PRINCIPAL (Página del Carrito)
+  ========================= -->
+  <main class="contenedor-carrito">
+    <!-- Sección izquierda: Tabla de los artículos del carrito -->
+    <section class="tabla-carrito">
+      <h2>Mi carrito <span id="contador-inline" class="small-count">(0)</span></h2>
+
+      <!-- Barra de progreso: Muestra cuánto falta para obtener envío gratis -->
+      <div class="progress-box">
+        <div id="mensaje-envio" class="mensaje-envio">Agrega S/ 99.00 en productos y obtén envío gratis</div>
+        <div class="progress">
+          <!-- La barra de progreso que representa visualmente la meta de envío gratis -->
+          <div id="barra-progreso" class="progress-fill" style="width:0%"></div>
+        </div>
+      </div>
+
+      <!-- Contenedor donde se inyectarán dinámicamente los productos del carrito -->
+      <div class="carrito-items" id="carrito-items" aria-live="polite">
+        <!-- Los productos se agregarán aquí dinámicamente mediante JavaScript -->
+      </div>
+    </section>
+
+    <!-- Sección derecha: Resumen de la compra -->
+    <aside class="resumen-compra" aria-labelledby="resumen-title">
+      <h3 id="resumen-title">¿Tienes un cupón de descuento?</h3>
+      <div class="cupon">
+        <input id="input-cupon" type="text" placeholder="Cupón de descuento">
+        <button id="btn-aplicar" class="btn-aplicar">Aplicar</button>
+      </div>
+
+      <div class="totales">
+        <p><span>Subtotal</span><span id="subtotal">S/ 0.00</span></p>
+        <p><span>Costo de envío</span><span id="costo-envio">--</span></p>
+        <p><span>Descuento por volumen</span><span id="descuento-volumen">S/ 0.00</span></p>
+        <p><span>Descuento directo</span><span id="descuento-directo">S/ 0.00</span></p>
+        <p><span>Ahorro total</span><span id="ahorro-total">S/ 0.00</span></p>
+        <hr>
+        <p class="total"><span>Total</span><span id="total">S/ 0.00</span></p>
+        <small>El costo de envío no está incluido en el total.</small>
+      </div>
+
+      <button id="whatsapp-comprar" class="btn-primary">Comprar ahora por WhatsApp</button>
+
+  </main>
+
+  <!-- Archivos JavaScript externos para manejar el menú y el carrito -->
+  <script src="js/menu.js?v=1.9" defer></script>
+  <script src="js/carrito.js?v=1.9" defer></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+{
+  "topBar": {
+    "titulo": "Avifarma",
+    "telefono": "+51 123 456 789",
+    "email": "info@avifarma.com",
+    "links": [
+      { "nombre": "Bytsac", "url": "https://www.bytsac.com" },
+      { "nombre": "Oechsle", "url": "https://www.oechsle.pe" }
+    ]
+  },
+  "BannerCarrusel": [
+    { "src": "img/carrusel/band_1.png", "alt": "Banner 1" },
+    { "src": "img/carrusel/band_2.png", "alt": "Banner 2" },
+    { "src": "img/carrusel/band_3.png", "alt": "Banner 3" },
+    { "src": "img/carrusel/band_4.png", "alt": "Banner 4" },
+    { "src": "img/carrusel/band_5.png", "alt": "Banner 5" },
+    { "src": "img/carrusel/band_6.png", "alt": "Banner 6" }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Mamá y Bebé",
+      "icono": "fa-baby",
+      "subcategorias": [
+        { "id": 11, "nombre": "Pañales" },
+        { "id": 12, "nombre": "Leches maternizadas" },
+        { "id": 13, "nombre": "Cuidado de la mamá" },
+        { "id": 14, "nombre": "Higiene y accesorios del bebé" }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Primeros Auxilios",
+      "icono": "fa-first-aid",
+      "subcategorias": [
+        { "id": 21, "nombre": "Botiquín básico" },
+        { "id": 22, "nombre": "Antisépticos y desinfectantes" },
+        { "id": 23, "nombre": "Vendas y gasas" },
+        { "id": 24, "nombre": "Termómetros y equipos" }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Vitaminas y Suplementos",
+      "icono": "fa-capsules",
+      "subcategorias": [
+        { "id": 31, "nombre": "Vitaminas (A, B, C, D, etc.)" },
+        { "id": 32, "nombre": "Minerales (calcio, magnesio, zinc, hierro)" },
+        { "id": 33, "nombre": "Suplementos nutricionales" },
+        { "id": 34, "nombre": "Proteínas y energizantes" }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Cuidado y Belleza",
+      "icono": "fa-spa",
+      "subcategorias": [
+        { "id": 41, "nombre": "Dermocosmética" },
+        { "id": 42, "nombre": "Cuidado de la piel" },
+        { "id": 43, "nombre": "Cuidado del cabello" },
+        { "id": 44, "nombre": "Higiene personal" }
+      ]
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Paracetamol 500mg",
+      "descripcion": "Alivio del dolor y reducción de fiebre.",
+      "precio": 5.00,
+      "precio_con_descuento": null,
+      "ahorro": null,
+      "stock": 20,
+      "img": "img/productos/paracetamol-500mg.png",
+      "categoria": 2,
+      "subcategoria": 21,
+      "descuento": null,
+      "descuentoVolumen": null
+    },
+    {
+      "id": 2,
+      "nombre": "Amoxicilina 500mg",
+      "descripcion": "Antibiótico para tratar infecciones bacterianas.",
+      "precio": 12.00,
+      "precio_con_descuento": null,
+      "ahorro": null,
+      "stock": 10,
+      "img": "img/productos/amoxicilina-500mg.png",
+      "categoria": 2,
+      "subcategoria": 22,
+      "descuento": null,
+      "descuentoVolumen": null
+    },
+    {
+      "id": 3,
+      "nombre": "Ibuprofeno 400mg",
+      "descripcion": "Reduce inflamación, dolor y fiebre.",
+      "precio": 8.00,
+      "precio_con_descuento": null,
+      "ahorro": null,
+      "stock": 10,
+      "img": "img/productos/ibuprofeno-400mg.png",
+      "categoria": 2,
+      "subcategoria": 23,
+      "descuento": null,
+      "descuentoVolumen": null
+    },
+    {
+      "id": 4,
+      "nombre": "Vitamina C 1g",
+      "descripcion": "Refuerza el sistema inmunológico.",
+      "precio": 10.00,
+      "precio_con_descuento": null,
+      "ahorro": null,
+      "stock": 20,
+      "img": "img/productos/vitamina-c-1g.png",
+      "categoria": 3,
+      "subcategoria": 31,
+      "descuento": null,
+      "descuentoVolumen": null
+    },
+    {
+      "id": 101,
+      "nombre": "Pediasure",
+      "descripcion": "Nutrición completa para niños",
+      "precio": 60.00,
+      "precio_con_descuento": 57.00,
+      "ahorro": 3.00,
+      "stock": 10,
+      "img": "img/ofertas/pediasure-of.png",
+      "descuento": "a S/. 57.00",
+      "categoria": 1,
+      "subcategoria": 12,
+      "descuentoVolumen": null
+    },
+    {
+      "id": 102,
+      "nombre": "Gel Limpiador Espumoso",
+      "descripcion": "Frasco 437 ML.",
+      "precio": 99.00,
+      "precio_con_descuento": 94.00,
+      "ahorro": 5.00,
+      "stock": 20,
+      "img": "img/ofertas/gel-limpiador-espumoso.jpg",
+      "descuento": "a S/. 94.00",
+      "categoria": 4,
+      "subcategoria": 42,
+      "descuentoVolumen": null
+    },
+    {
+      "id": 103,
+      "nombre": "Pañales Huggies",
+      "descripcion": "Pañales Huggies Bigpack Natural Care XXXG - Paquete 54 UN",
+      "precio": 50.00,
+      "precio_con_descuento": null,
+      "ahorro": null,
+      "stock": 10,
+      "img": "img/ofertas/panal-huggies.jpg",
+      "descuento": "Compra 3 y el tercero al 5%",
+      "categoria": 1,
+      "subcategoria": 11,
+      "descuentoVolumen": [
+        {"nombre": "Tercero al 5%", "activa": true, "compra": 1, "promo": 0.05, "aplicaA": 2},
+        {"nombre": "Segunda al 10%", "activa": false, "compra": 1, "promo": 0.10, "aplicaA": 2}
+      ]
+    },
+    {
+      "id": 104,
+      "nombre": "ISDIN Fotoprotector Fusion Fluid SPF50 50ML",
+      "descripcion": "Bloqueador solar facial.",
+      "precio": 100.00,
+      "precio_con_descuento": null,
+      "ahorro": null,
+      "stock": 20,
+      "img": "img/ofertas/protector-solar.jpg",
+      "descuento": "Compra 2 y la segunda al 5%",
+      "categoria": 4,
+      "subcategoria": 42,
+      "descuentoVolumen": [
+        {"nombre": "Segunda al 5%", "activa": true, "compra": 1, "promo": 0.05, "aplicaA": 2},
+        {"nombre": "Segunda al 10%", "activa": false, "compra": 1, "promo": 0.10, "aplicaA": 2}
+      ]
+    }
+  ],
+  "servicios": [
+    {
+      "icono": "💊",
+      "titulo": "Dispensación de medicamentos",
+      "descripcion": "Venta con y sin receta, con orientación farmacéutica.",
+      "imagen": "img/carrusel-servicios/dispensacion.png"
+    },
+    {
+      "icono": "🩺",
+      "titulo": "Control de signos vitales",
+      "descripcion": "Medición de presión arterial, glucosa y colesterol.",
+      "imagen": "img/carrusel-servicios/control-signos.png"
+    },
+    {
+      "icono": "💉",
+      "titulo": "Aplicación de inyectables",
+      "descripcion": "Administración segura de medicamentos y vitaminas.",
+      "imagen": "img/carrusel-servicios/inyectables.png"
+    },
+    {
+      "icono": "🧴",
+      "titulo": "Consejería farmacéutica",
+      "descripcion": "Asesoría en el uso correcto de medicamentos.",
+      "imagen": "img/carrusel-servicios/consejeria.png"
+    },
+    {
+      "icono": "🔬",
+      "titulo": "Pruebas rápidas",
+      "descripcion": "Glucosa, colesterol, embarazo y más.",
+      "imagen": "img/carrusel-servicios/pruebas-rapidas.png"
+    },
+    {
+      "icono": "🚑",
+      "titulo": "Primeros auxilios",
+      "descripcion": "Atención básica y curaciones menores.",
+      "imagen": "img/carrusel-servicios/primeros-auxilios.png"
+    }
+  ],
+  "novedades": [
+    {
+      "id": 201,
+      "titulo": "Cómo armar un botiquín familiar básico",
+      "descripcion": "Descubre los elementos esenciales que no pueden faltar en casa.",
+      "img": "img/novedades/botiquin.jpg",
+      "boton": "Leer más"
+    },
+    {
+      "id": 202,
+      "titulo": "Campaña de presión arterial",
+      "descripcion": "Este sábado ofrecemos chequeo gratuito de presión arterial en nuestra botica.",
+      "img": "img/novedades/presion-arterial.jpg",
+      "boton": "Ver detalles"
+    },
+    {
+      "id": 203,
+      "titulo": "7 de abril: Día Mundial de la Salud",
+      "descripcion": "Únete a nuestra jornada de chequeos gratuitos y promoción del bienestar.",
+      "img": "img/novedades/dia-salud.jpg",
+      "boton": "Más info"
+    },
+    {
+      "id": 204,
+      "titulo": "¡Aniversario Avifarma!",
+      "descripcion": "Celebramos con sorteos, descuentos y promociones especiales en todos nuestros productos.",
+      "img": "img/novedades/aniversario.png",
+      "boton": "Participar"
+    }
+  ]
+}
